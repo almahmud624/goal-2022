@@ -1,0 +1,145 @@
+/* custom fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Rubik:wght@400;500;600;700&display=swap");
+
+body {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+}
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+/* banner styles */
+header {
+  padding-bottom: 6rem;
+}
+#banner {
+  display: flex;
+  justify-content: space-between;
+  background: #111;
+  color: #fff;
+  margin-top: 30px;
+  padding: 30px 70px 0 70px;
+  border-radius: 20px;
+}
+.one-half {
+  width: 50%;
+}
+#banner-text .title {
+  font-size: 3.8em;
+  margin-bottom: 0;
+}
+#banner-text .banner-subtitle {
+  font-size: 0.9em;
+  line-height: 1.6em;
+  margin: 2rem 0;
+}
+.btn {
+  border: none;
+  padding: 15px 28px;
+  background: red;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+#banner-img img {
+  width: 100%;
+  display: block;
+}
+
+/* blog categories styles */
+#blog-categories {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  padding: 0 0 4rem 0;
+}
+.menu {
+  background: #111;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 10px;
+}
+.menu-btn {
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+  background-color: #fff;
+  color: #000;
+}
+.current {
+  background-color: red;
+  color: #fff;
+}
+.card-img img {
+  width: 100%;
+  display: block;
+}
+.card-body {
+  padding: 10px 20px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 10px 10px;
+}
+#blogs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+#blogs .transfer-btn {
+  background: transparent;
+  font-weight: 400;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+.card-title {
+  font-size: 1em;
+}
+.card-footer {
+  display: flex;
+  gap: 20px;
+}
+.card-footer span {
+  color: #777;
+  font-size: 14px;
+}
+.card-footer span i {
+  margin-right: 3px;
+}
+
+/* footer styles  */
+footer {
+  text-align: center;
+  background-color: #111;
+  padding: 4rem 0;
+}
+footer .section-title {
+  color: #fff;
+  font-size: 2.1em;
+  font-weight: 500;
+}
+footer hr {
+  border: 1px solid rgba(241, 241, 241, 0.144);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+.footer-menu {
+  margin-top: 2rem;
+}
+.footer-menu a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  padding: 5px 10px;
+  text-transform: capitalize;
+  font-size: 14px;
+  color: #888;
+}
