@@ -202,6 +202,17 @@ footer hr {
   font-size: 14px;
   color: #888;
 }
+.social {
+  margin-top: 2rem;
+}
+.social a {
+  text-decoration: none;
+}
+.social a i {
+  color: #fff;
+  font-size: 1.1em;
+  margin: 0 10px;
+}
 
 /* media queries */
 @media only screen and (max-width: 688px) {
