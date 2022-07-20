@@ -1,6 +1,7 @@
 /* custom fonts */
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Rubik:wght@400;500;600;700&display=swap");
 
+/* utilities */
 body {
   font-family: "Rubik", sans-serif;
   margin: 0;
@@ -35,6 +36,16 @@ header {
   line-height: 1.6em;
   margin: 2rem 0;
 }
+#banner-text .truncate {
+  font-size: 0.9em;
+  line-height: 1.6em;
+  margin: 2rem 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 200px;
+  white-space: nowrap;
+  display: none;
+}
 .btn {
   border: none;
   padding: 15px 28px;
@@ -58,19 +69,19 @@ header {
 }
 .menu {
   background: #111;
-  display: inline-block;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  padding: 35px;
   border-radius: 10px;
 }
 .menu-btn {
   text-decoration: none;
-  display: inline-block;
   font-weight: 500;
-  display: flex;
-  flex-direction: column;
-  margin: 15px 0;
+  margin: 10px 0;
   background-color: #fff;
   color: #000;
+  text-align: center;
 }
 .current {
   background-color: red;
@@ -142,4 +153,34 @@ footer hr {
   text-transform: capitalize;
   font-size: 14px;
   color: #888;
+}
+
+/* media queries */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  #banner-text .title {
+    font-size: 2.8em;
+  }
+  #banner-text .banner-subtitle {
+    display: none;
+  }
+  #banner-text .truncate {
+    display: block;
+  }
+  #blog-categories {
+    display: inherit;
+  }
+  .menu {
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 0 0 35px 0;
+  }
+  .menu-btn {
+    width: 100%;
+    border: 1px solid #ccc;
+  }
+  #blogs {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
