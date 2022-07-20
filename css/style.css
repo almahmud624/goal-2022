@@ -49,7 +49,7 @@ header {
 .btn {
   border: none;
   padding: 15px 28px;
-  background: red;
+  background: #396fdf;
   border-radius: 5px;
   color: #fff;
   font-weight: 500;
@@ -60,7 +60,7 @@ header {
 }
 .banner-btn:hover {
   background-color: transparent;
-  border: 2px solid red;
+  border: 2px solid #396fdf;
 }
 .banner-btn i {
   transition: all 0.5s;
@@ -97,7 +97,7 @@ header {
   text-align: center;
 }
 .current {
-  background-color: red;
+  background-color: #396fdf;
   color: #fff;
 }
 .card-img img {
@@ -212,6 +212,10 @@ footer hr {
   color: #fff;
   font-size: 1.1em;
   margin: 0 10px;
+  transition: all 0.5s;
+}
+.social a i:hover {
+  color: #396fdf;
 }
 
 /* media queries */
