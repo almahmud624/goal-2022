@@ -54,8 +54,20 @@ header {
   color: #fff;
   font-weight: 500;
   font-size: 1em;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.5s;
 }
-
+.banner-btn:hover {
+  background-color: transparent;
+  border: 2px solid red;
+}
+.banner-btn i {
+  transition: all 0.5s;
+}
+.banner-btn:hover i {
+  transform: translateX(5px);
+}
 #banner-img img {
   width: 100%;
   display: block;
@@ -126,7 +138,12 @@ header {
 .card-footer span i {
   margin-right: 3px;
 }
-
+.view-btn {
+  text-align: center;
+  display: none;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
 /* upcoming match styles */
 
 .match {
@@ -256,6 +273,9 @@ footer hr {
   .menu-btn {
     width: 100%;
     border: 1px solid #ccc;
+  }
+  .view-btn {
+    display: block;
   }
   #blogs,
   #matchs {
