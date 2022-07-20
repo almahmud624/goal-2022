@@ -62,7 +62,8 @@ header {
 }
 
 /* blog categories styles */
-#blog-categories {
+#blog-categories,
+#upcoming-match {
   display: grid;
   grid-template-columns: 300px 1fr;
   padding: 0 0 4rem 0;
@@ -96,7 +97,8 @@ header {
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
   border-radius: 0 0 10px 10px;
 }
-#blogs {
+#blogs,
+#matchs {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
@@ -123,6 +125,35 @@ header {
 }
 .card-footer span i {
   margin-right: 3px;
+}
+
+/* upcoming match styles */
+
+.match {
+  padding: 30px 20px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.match .match-team-flag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.match .match-team-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.match-time {
+  text-align: center;
+  font-size: 0.9em;
+  color: #555;
 }
 
 /* footer styles  */
@@ -156,6 +187,51 @@ footer hr {
 }
 
 /* media queries */
+@media only screen and (max-width: 688px) {
+  #banner {
+    display: block;
+  }
+  .one-half {
+    width: 100%;
+  }
+  #banner-text .title {
+    font-size: 2.8em;
+  }
+  #banner-text .banner-subtitle {
+    display: none;
+  }
+  #banner-text .truncate {
+    display: block;
+  }
+  #banner .btn {
+    margin-bottom: 20px;
+  }
+  #blog-categories,
+  #upcoming-match {
+    display: inherit;
+  }
+  .menu {
+    background: transparent;
+    display: flex;
+    padding: 0 0 35px 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu-btn {
+    border: 1px solid #ccc;
+    font-size: 1.3em;
+  }
+  #blogs,
+  #matchs {
+    grid-template-columns: 1fr;
+  }
+  .footer-menu a {
+    display: block;
+    font-size: 1.1em;
+  }
+}
+
+/* responsive for tablet device */
 @media only screen and (min-width: 688px) and (max-width: 992px) {
   #banner-text .title {
     font-size: 2.8em;
@@ -166,7 +242,8 @@ footer hr {
   #banner-text .truncate {
     display: block;
   }
-  #blog-categories {
+  #blog-categories,
+  #upcoming-match {
     display: inherit;
   }
   .menu {
@@ -180,7 +257,8 @@ footer hr {
     width: 100%;
     border: 1px solid #ccc;
   }
-  #blogs {
+  #blogs,
+  #matchs {
     grid-template-columns: repeat(2, 1fr);
   }
 }
